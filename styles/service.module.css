@@ -1,0 +1,56 @@
+.list {
+  margin: 50px 5px;
+  display: flex;
+  gap: 20px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 315px;
+  padding: 10px 28px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d29;
+  overflow: hidden;
+}
+.go {
+  padding: 10px 6%;
+  display: flex;
+  justify-content: flex-end;
+}
+.name {
+  font-family: "Montserrat";
+  font-size: 1.3em;
+  color: #e8e8e8;
+  z-index: 5;
+}
+.d {
+  padding: 8px 0;
+  font-family: "Nunito Sans";
+  font-size: 0.9em;
+  color: #a3a3a3;
+  z-index: 5;
+}
+.go > div {
+  background-color: #3d3864;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: 400ms;
+  box-shadow: 0 0 0 #2d2d51;
+  cursor: pointer;
+}
+.card:hover .go > div {
+  box-shadow: 0 0 0 300px #2d2d51;
+}
+.img {
+  display: flex;
+  max-width: 100px;
+  justify-content: center;
+  margin: 20px 0;
+  z-index: 5;
+}

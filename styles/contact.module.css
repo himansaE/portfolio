@@ -1,0 +1,109 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-size: 1.4em;
+  text-align: center;
+  margin: 28px 5px;
+}
+.contact_m {
+  opacity: 0.8;
+  margin: 5px clamp(20px, 5vw, 60px);
+}
+.contact_m_i {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.social_h {
+  display: flex;
+  justify-content: center;
+}
+.social_h > div {
+  display: flex;
+  max-width: 207px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 22px;
+}
+.social_i {
+  border-radius: 50%;
+  background-color: rgb(41, 41, 41);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 200ms;
+}
+.social_i > a {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.social_i:hover {
+  background-color: rgb(42, 42, 150);
+}
+.form_d {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  flex-basis: 60%;
+}
+.form > form {
+  max-width: 650px;
+  margin: 10px auto;
+}
+.form input,
+.form textarea {
+  margin: 10px 5px;
+  padding: 11px 20px;
+  font-size: 1.1em;
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 5px;
+  color: #c2c2c2;
+}
+.form textarea {
+  font-family: "Open Sans";
+  resize: vertical;
+  min-height: 200px;
+}
+
+.m {
+  margin: 20px;
+  padding: 10px 48px !important;
+}
+.message {
+  display: flex;
+  padding: 6px 17px;
+  align-items: center;
+  margin: 4px 35px;
+  justify-content: space-between;
+  border-radius: 4px;
+  color: #ffffffc4;
+}
+.message_c {
+  height: 3em;
+}
+
+@media screen and (max-width: 650px) {
+  .form {
+    padding: 5px 20px;
+    flex-basis: 100%;
+  }
+}
