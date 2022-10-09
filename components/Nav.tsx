@@ -40,7 +40,7 @@ const NavBar = () => {
           {nav_list.map((i) => (
             <li key={i.name} className={styles.li_res}>
               <Link href={i.url}>
-                <a>{i.name}</a>
+                <a tabIndex={nav_opened ? 0 : -1}>{i.name}</a>
               </Link>
             </li>
           ))}
